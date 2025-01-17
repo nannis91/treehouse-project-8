@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFCFC;
+    font-family: "Work Sans", serif;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.card {
+    background-color: #fff;
+    border: solid 3px #DFDFDF;
+    border-radius: 10px;
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border: solid 3px #cecece;
+}
+
+.card .container {
+    display: flex;
+    flex-direction: column;
+} 
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+h1 {
+    color: #4A4A4A;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: #404A51;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #888E92;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.overlay {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+}
+
+.modal {
+    z-index: 2;
+    position: absolute;
+    background-color: #fff;
+    border: solid 3px #DFDFDF;
+    border-radius: 10px;
+    min-width: 500px;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.modal-top {
+    display: flex;
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.modal-top:hover {
+    background-color: #d4d4d4;
+    border-radius: 50%;
+}
+
+.modal .avatar img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+}
+
+hr {
+    margin: 2rem 0;
+    width: 100%;
+}
